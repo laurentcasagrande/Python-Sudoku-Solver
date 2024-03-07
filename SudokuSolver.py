@@ -3,6 +3,7 @@ from rich.progress import track
 from rich.console import Console
 import time
 
+
 def get_test_cases(numTestcases):
     quizzes = np.zeros((1_000_000, 81), np.int32)
     solutions = np.zeros((1_000_000, 81), np.int32)
@@ -152,4 +153,3 @@ if __name__ == "__main__":
             print(test._sudoku_list)
     print(f"Time: {time.time()-start}")
     print("Finished, Unsolvable: ", num_unsolvable)
-    
